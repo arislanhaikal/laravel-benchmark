@@ -27,3 +27,5 @@ frankenphp
 frankenphp-worker.php
 !deployment/octane/FrankenPHP
 
+rr
+.rr.yaml

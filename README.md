@@ -10,7 +10,7 @@ http://yourdomain.com/api/random
 http://yourdomain.com/api/http-request
 ```
 
-## Docker
+## Docker Build
 
 The Dockerfile is included in the repository. You can build the image and run the container with the following commands.
 Dockerfile originally from [exaco/laravel-octane-dockerfile](https://github.com/exaco/laravel-octane-dockerfile)
@@ -39,7 +39,11 @@ docker run -d -p 8000:8000 <image-name>:<tag>
 Example:
 
 ```bash
-docker run -d -p 9001:8000 benchmark:frankenphp
-docker run -d -p 9002:8000 benchmark:swoole
-docker run -d -p 9003:8000 benchmark:roadrunner
+docker run -p 9001:8000 benchmark:frankenphp
+docker run -p 9002:8000 benchmark:swoole
+docker run -p 9003:8000 benchmark:roadrunner
 ```
+
+## Benchmark
+
+I used [wrk](https://github.com/wg/wrk)
