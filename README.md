@@ -20,10 +20,26 @@ docker build -t <image-name>:<tag> -f <your-octane-driver>.Dockerfile .
 
 ```
 
+Example:
+
+```bash
+docker build -t benchmark:frankenphp -f FrankenPHP.Alpine.Dockerfile .
+docker build -t benchmark:swoole -f Swoole.Alpine.Dockerfile .
+docker build -t benchmark:roadrunner -f RoadRunner.Alpine.Dockerfile .
+```
+
 ### Docker Container
 
 You can run the container with the following command.
 
 ```bash
 docker run -d -p 8000:8000 <image-name>:<tag>
+```
+
+Example:
+
+```bash
+docker run -d -p 9001:8000 benchmark:frankenphp
+docker run -d -p 9002:8000 benchmark:swoole
+docker run -d -p 9003:8000 benchmark:roadrunner
 ```
