@@ -9,3 +9,21 @@ http://yourdomain.com/api/static
 http://yourdomain.com/api/random
 http://yourdomain.com/api/http-request
 ```
+
+## Docker
+
+The Dockerfile is included in the repository. You can build the image and run the container with the following commands.
+Dockerfile originally from [exaco/laravel-octane-dockerfile](https://github.com/exaco/laravel-octane-dockerfile)
+
+```bash
+docker build -t <image-name>:<tag> -f <your-octane-driver>.Dockerfile .
+
+```
+
+### Docker Container
+
+You can run the container with the following command.
+
+```bash
+docker run -d -p 8000:8000 <image-name>:<tag>
+```
