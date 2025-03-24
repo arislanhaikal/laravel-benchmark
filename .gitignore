@@ -25,3 +25,7 @@ yarn-error.log
 **/caddy
 frankenphp
 frankenphp-worker.php
+!deployment/octane/FrankenPHP
+!deployment/octane/FrankenPHP/Caddyfile
+!deployment/octane/FrankenPHP/supervisord.frankenphp.conf
+
